@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html  lang="en"> 
+<head>
+
+  
+   <meta charset="utf-8">
+	<title>IIT - Molka Zayen</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+   
+   <link rel="stylesheet" href="css mimi.css">
+	
+
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="html mimi.html">A propos</a></li>
+          <li><a href="parcours mimi.html">Parcours</a></li>
+          <li><a href="competence mimi.html">Compétences</a></li>
+          <li><a href="certification mimi.html">Certification</a></li>
+          <li><a href="loisirs mimi.html">loisirs</a></li>
+          <li><a href="quiz mimi.html">Quiz</a></li>
+          <li><a href="temoignage mimi.html">Témoignage</a></li>
+          <li><a href="formulaire mimi.html">Contact</a></li>
+   
+        </ul>
+      </nav>
+     
+    <section id="about">
+ 
+     <div class="row">
+ 
+       
+ 
+         <div class="texte">
+    <h2>Quizz Informatique</h2>
+         </div>
+
+    <form id="quizForm">
+        <div class="question">
+            <label>1. Qu'est-ce que HTML?</label><br>
+            <input type="radio" name="q1" value="a"> HyperText Markup Language<br>
+            <input type="radio" name="q1" value="b"> HighTech Machine Learning<br>
+            <input type="radio" name="q1" value="c"> HyperTransferable Machine Language<br>
+        </div>
+        <div class="question">
+            <label>2. Quelle est la signification de CSS?</label><br>
+            <input type="radio" name="q2" value="a"> Computer Style Sheets<br>
+            <input type="radio" name="q2" value="b"> Creative Style Sheets<br>
+            <input type="radio" name="q2" value="c"> Cascading Style Sheets<br>
+        </div>
+        <div class="question">
+            <label>3. À quoi sert HTML ? </label><br>
+            <input type="radio" name="q3" value="a"> À mettre en forme des pages web<br>
+            <input type="radio" name="q3" value="b"> À structurer du contenu dans une page web<br>
+            <input type="radio" name="q3" value="c"> À créer des pages dynamiques<br>
+        </div>
+        <div class="question">
+            <label>4. Qu'est ce qu'un navigateur web ?</label><br>
+            <input type="radio" name="q4" value="a">  Un logiciel capable d'interpréter et d'afficher du code HTML<br>
+            <input type="radio" name="q4" value="b"> Un outil permettant d'accéder à Internet<br>
+            <input type="radio" name="q4" value="c"> Un réseau social global<br>
+        </div>
+        <div class="question">
+            <label>5. Comment représenter un paragraphe en HTML ? </label><br>
+            <input type="radio" name="q5" value="a"> ul <br>
+            <input type="radio" name="q5" value="b"> div <br>
+            <input type="radio" name="q5" value="c"> p <br>
+        </div> 
+        <div class="question">
+            <label>6. Citez un attribut HTML lié aux images </label><br>
+            <input type="radio" name="q6" value="a"> class <br>
+            <input type="radio" name="q6" value="b"> src <br>
+            <input type="radio" name="q6" value="c"> href <br>
+        </div> 
+        <div class="question">
+            <label>7. Quel attribut permet d'indiquer la destination d'un lien ? </label><br>
+            <input type="radio" name="q7" value="a"> link <br>
+            <input type="radio" name="q7" value="b"> href <br>
+            <input type="radio" name="q7" value="c"> class <br>
+        </div>
+        <div class="question">
+            <label>8. À quoi sert le langage CSS ? </label><br>
+            <input type="radio" name="q8" value="a"> À réaliser des pages dynamiques <br>
+            <input type="radio" name="q8" value="b"> À ajouter du style aux documents web <br>
+            <input type="radio" name="q8" value="c"> À insérer du contenu dans une page internet<br>
+        </div>
+        <div class="question">
+            <label>9. Pourquoi utilise-t-on généralement du CSS ? </label><br>
+            <input type="radio" name="q9" value="a"> Pour se compliquer la vie bien sûr<br>
+            <input type="radio" name="q9" value="b"> Pour séparer le contenu et la présentation des documents web<br>
+            <input type="radio" name="q9" value="c"> Cela permet de faire de plus jolis dégradés de couleurs<br>
+        </div>
+        <div class="question">
+            <label>10. Où est-il conseillé de placer le code CSS ? </label><br>
+            <input type="radio" name="q10" value="a"> Dans le < body ><br>
+            <input type="radio" name="q10" value="b"> Entre les balises < head >, c'est bien plus propre<br>
+            <input type="radio" name="q10" value="c"> Dans un fichier externe utilisable pour plusieurs pages<br>
+        </div>
+        <div class="question">
+            <label>11. Combien de règles peut contenir un fichier CSS ? </label><br>
+            <input type="radio" name="q11" value="a"> Il n'y a pas de limite, on peut en créer autant que l'on veut<br>
+            <input type="radio" name="q11" value="b"> Si le poids du fichier n'excède pas 20Ko, c'est tout bon<br>
+            <input type="radio" name="q11" value="c"> 150 à plus ou moins 10%<br>
+        </div>
+        <div class="question">
+            <label>12. Dans quoi définit-on les déclarations CSS ?</label><br>
+            <input type="radio" name="q12" value="a"> Entre deux crochets séparées par des tirets [ ... - ... ]<br>
+            <input type="radio" name="q12" value="b"> Entre deux guillemets séparées par des slashs " ... / ... "<br>
+            <input type="radio" name="q12" value="c"> Entre deux accolades séparés par des points-virgules { ... ; ... }<br>
+        </div>
+       
+      
+    
+        
+        <button type="button" onclick="calculateScore()">Valider</button>
+    </form>
+
+    <div id="result">
+
+    <script>
+        function calculateScore() {
+            // Définissez les réponses correctes ici
+            const correctAnswers = {
+                q1: "a",
+                q2: "a",
+                q3: "a",
+                q4: "a",
+                q5: "c",
+                q6: "b",
+                q7: "b",
+                q8: "b",
+                q9: "b",
+                q10: "c",
+                q11: "a",
+                q12: "c",
+                // Ajoutez les réponses pour les autres questions
+            };
+
+            let score = 0;
+
+            // Parcourez toutes les questions du formulaire
+            for (let i = 1; i <= Object.keys(correctAnswers).length; i++) {
+                const questionName = "q" + i;
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                // Vérifiez si la réponse est correcte et incrémentez le score
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[questionName]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Affichez le score et les réponses correctes
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `<p>Votre score est de ${score} sur ${Object.keys(correctAnswers).length}.</p>`;
+
+            for (const question in correctAnswers) {
+                resultDiv.innerHTML += `<p>Question ${question.substr(1)}: Réponse correcte - ${correctAnswers[question]}</p>`;
+            }
+        }
+    </script>
+    </div>
+    </div>
+    </section>
+    <footer>
+        <table class="contact-table">
+           <tr>
+              <td>
+        <div class="social-contact">
+           <ul class="social">
+              <li><a href="https://www.facebook.com/profile.php?id=100071191774407"><img src="c:\Users\Lenovo\Desktop\essai\image\icon\fc.jpeg" alt="Facebook" /></a></li>
+              
+              <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Fmolka_zayen%3Ffbclid%3DIwAR0pxCw_R_1ctYvO-ni8Bld4c2rj0GznYi9bNGj28WBf8kF0AFx0ovt7a6o&h=AT346fsEKag6zksiYa_dcpI-oqDyQxtHwEjVC1yaV0wvduMyUPUVpeTmIXbQuqxqtnKXYmk_l7x4A56PKakqH4oe8jymazjLTIyETXgJg351AagUvgmqcONE3EMnJgd2k668YQZlseIsVGAz"><img src="c:\Users\Lenovo\Desktop\essai\image\icon\insta.jpeg" alt="Instagram" /></a></li>
+           </ul>
+        </div>
+      </td> 
+      <td>
+           <div>
+               <p>Contactez-nous : </p>
+               <p>Email: molkazayen2023@gmail.com</p>
+               <p>Téléphone: +216 26 780 005</p>
+           </div>
+       
+     </td>
+     </tr>
+     </table>
+        <p>&copy; 2023 Molka Zayen - Site Personnel</p>
+      </footer>
+  
+
+</body>
+</html>
